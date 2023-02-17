@@ -4,28 +4,27 @@
 
 /**
  * main - Entry point
- * Description: dertermie wether number is positive, negative or zero
+ * Description: dertermine wether a number is positive, negative or zero
  * Return: 0 (Success)
  */
-
 int main(void)
 {
-	int n:
+	int n;
 
-	Srand(time(0));
-	n = rad() - RAND - MAX / 2;
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
 
 	if (n > 0)
 	{
-		printf("%d is apositive number \n", n);
+		printf(" %d is apositive number \n ", n);
 	}
 	else if (n == 0)
 	{
-		prinf("%d is zero \n", n);
+		printf(" %d is zero \n ", n);
 	}
 	else
 	{
-		printf("%d is a negative \n", n);
+		printf(" %d is a negative \n ", n);
 	}
 	return (0);
 }
