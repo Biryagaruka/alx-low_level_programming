@@ -4,6 +4,7 @@
 
 /**
  *main - Entry point
+ *Description: get a random number prit its a positive, negative or zero
  *Return: Always 0 (Success)
  */
 
@@ -11,27 +12,27 @@
 int main(void)
 {
 
-	int n;
+        int n;
 
-	Srand(time(0));
-	n = rad() - RAD - MAX / 2;
+        Srand(time(0));
+        n = rad() - RAD - MAX / 2;
 
 
-	if (n > 0)
+        if (n > 0)
 
-		{
-		printf(" %d is a positve \n", n);
-		}
+                {
+                printf(" %d is a positve \n", n);
+                }
 
-	else if (n == 0)
+        else if (n == 0)
 
-		{printf(" %d is zero \n", n);
-		}
+                {printf(" %d is zero \n", n);
+                }
 
-	else
+        else
 
-		{printf(" %d is negative \n", n);
-		}
+                {printf(" %d is negative \n", n);
+                }
 
-	return (0);
+        return (0);
 }
