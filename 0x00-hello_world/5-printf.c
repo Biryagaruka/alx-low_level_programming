@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- * description: program that prints a couple of strings
- * Return 0 (success)
+ * main - A program tha prints a couple of srtrings in a sentance
+ *
+ * Return: Always 0 (success)
  */
 int main(void)
 {
