@@ -2,15 +2,15 @@
 
 /**
  * _islower -  a function that checks for lowercase character
- *
- * Return: always 0 (success)
+ *@c: The character to be checked
+ * Return: 1 for lower case character or 0 for anything else
  */
 
 int _islower(int c)
 {
-char letter;
-
-for (letter = 'a'; letter <= 'z'; letter++)
-_putchar(letter);
-_putchar('\n');
+	if (c >= 97 && c <= 122)
+	{
+		return (1);
+	}
+	return (0);
 }
