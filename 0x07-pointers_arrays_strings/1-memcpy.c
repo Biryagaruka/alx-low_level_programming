@@ -1,20 +1,20 @@
 /**
- * _memset - fills n bytes of memory
+ * _memcpy - copys n bytes of memory
  *
- * @s: pointer to start of memory area
- * @b: constant byte to fill with
- * @n: num bytes to fill in
+ * @dest: pointer to dest str
+ * @src: source to be copied from
+ * @n: num bytes to copy from src
  *
- * Return: pointer to beginning of memory area s
+ * Return: pointer to beginning of memory area dest
  */
-char *_memset(char *s, char b, unsigned int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i = 0;
-	char *start = s;
+	char *start = dest;
 
 	while (i < n)
 	{
-		*s++ = b;
+		*dest++ = *src++;
 		i++;
 	}
 	return (start);
